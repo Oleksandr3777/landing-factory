@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Формуюче боді з пушапом — 1 089 грн | Знижка −37%</title>
+  <meta name="description" content="Формуюче боді з пушапом. Невидимий під будь-яким одягом. Корекція талії та животу. Розміри S–3XL. Доставка Нова Пошта. Оплата при отриманні."/>
+  <meta property="og:title" content="Формуюче боді з пушапом — 1 089 грн"/>
+  <meta property="og:description" content="Підіймає груди, формує талію, приховує боки. Невидимий під відкритим вбранням. 3 кольори."/>
+  <meta property="og:image" content="images/w1.jpg"/>
+  <meta property="og:type" content="product"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg:    '#0D0D0D',
+            card:  '#111111',
+            card2: '#1A1A1A',
+            bord:  '#2A2A2A',
+            muted: '#888888',
+            dim:   '#555555',
+            body:  '#CCCCCC',
+            gold:  '#D4A843',
+            gold2: '#C4916A',
+          },
+          fontFamily: {
+            heading: ['"Playfair Display"', 'serif'],
+            body:    ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: #0D0D0D; color: #CCC; font-family: 'Inter', sans-serif; }
+
+    .cd-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: #fff; line-height: 1; }
+    .cd-lbl { font-size: 0.6rem; color: #555; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 2px; }
+
+    .faq-body { max-height: 0; overflow: hidden; transition: max-height .32s ease; }
+    .faq-body.open { max-height: 320px; }
+    .faq-icon { transition: transform .3s ease; }
+    .faq-open .faq-icon { transform: rotate(180deg); }
+
+    .sz { cursor: pointer; transition: all .18s; }
+    .sz.active { background: #D4A843 !important; color: #000 !important; border-color: #D4A843 !important; }
+
+    .fi { opacity: 0; transform: translateY(24px); transition: opacity .65s ease, transform .65s ease; }
+    .fi.visible { opacity: 1; transform: translateY(0); }
+
+    .gold-text { background: linear-gradient(90deg,#D4A843,#C4916A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .gold-grad { background: linear-gradient(90deg,#D4A843,#C4916A); }
+    .gold-line { height: 1px; background: linear-gradient(90deg,transparent,#D4A843 50%,transparent); }
+
+    .split-img { width: 130px; flex-shrink: 0; border-radius: 16px; overflow: hidden; aspect-ratio: 3/4; }
+    @media(min-width:768px){ .split-img { width: 260px; } }
+
+    .gallery-img { transition: transform .5s ease; display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .gallery-img:hover { transform: scale(1.04); }
+
+    .form-input { background: #1A1A1A; border: 1px solid #2A2A2A; border-radius: 10px; padding: 14px 16px; color: #CCC; font-family: 'Inter',sans-serif; font-size: 14px; width: 100%; transition: border-color .2s; }
+    .form-input:focus { outline: none; border-color: #D4A843; }
+    .form-input::placeholder { color: #555; }
+
+    .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; padding: 10px 16px 16px; background: linear-gradient(0deg,#0D0D0D 70%,transparent); }
+    @media(min-width:768px){ .sticky-cta { display: none !important; } }
+  </style>
+</head>
+<body class="bg-bg">
+
+<!-- ══════════════════════════════════════════════
+     NAV
+══════════════════════════════════════════════ -->
+<nav class="sticky top-0 z-40 bg-bg/95 backdrop-blur-sm border-b border-bord">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <span class="font-heading text-gold text-sm tracking-[.2em] font-semibold">FORMUUCHE BODI</span>
+    <div class="flex items-center gap-3">
+      <span class="text-dim text-xs line-through hidden sm:inline">1 689 ₴</span>
+      <span class="bg-gold text-black text-[10px] font-bold px-2 py-1 rounded">−37%</span>
+      <a href="#order" class="hidden md:block gold-grad text-black text-xs font-bold px-5 py-2 rounded-full hover:opacity-90 transition-opacity">Замовити →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section class="bg-bg pt-6 pb-16 px-4 md:px-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row gap-8 md:gap-14 items-start">
+
+      <!-- PHOTO -->
+      <div class="w-full md:w-1/2 order-1">
+        <div class="relative rounded-2xl overflow-hidden aspect-[3/4] mb-3">
+          <img id="hero-img" src="images/w1.jpg" alt="Формуюче боді з пушапом — біле" class="w-full h-full object-cover object-top transition-opacity duration-300"/>
+          <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-sm text-white text-[10px] px-3 py-1.5 rounded-full border border-bord tracking-wider">✦ ПУШАП · КОРЕКЦІЯ</div>
+          <div class="absolute bottom-4 left-4 right-4 bg-black/70 backdrop-blur-sm text-xs px-4 py-2.5 rounded-xl flex items-center gap-2">
+            <svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm1 14.93V17a1 1 0 01-2 0v-.07A8 8 0 014.07 11H5a1 1 0 010-2h-.93A8 8 0 0111 4.07V5a1 1 0 012 0v-.93A8 8 0 0119.93 11H19a1 1 0 010 2h.93A8 8 0 0113 16.93z"/></svg>
+            <span class="text-cream/90">Залишилось <strong class="text-gold">23</strong> одиниці за цією ціною</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-2">
+          <button onclick="switchColor('white')" class="color-thumb rounded-xl overflow-hidden aspect-square border-2 border-gold transition-colors" data-color="white">
+            <img src="images/w1.jpg" alt="Біле боді" class="w-full h-full object-cover object-top"/>
+          </button>
+          <button onclick="switchColor('black')" class="color-thumb rounded-xl overflow-hidden aspect-square border-2 border-bord hover:border-gold transition-colors" data-color="black">
+            <img src="images/b1.jpg" alt="Чорне боді" class="w-full h-full object-cover object-top"/>
+          </button>
+          <button onclick="switchColor('pink')" class="color-thumb rounded-xl overflow-hidden aspect-square border-2 border-bord hover:border-gold transition-colors" data-color="pink">
+            <img src="images/p1.jpg" alt="Рожеве боді" class="w-full h-full object-cover object-top"/>
+          </button>
+        </div>
+      </div>
+
+      <!-- TEXT -->
+      <div class="w-full md:w-1/2 order-2 md:pt-4">
+        <p class="text-gold text-[10px] tracking-[.25em] uppercase mb-4">Колекція 2025 · Боді з пушапом</p>
+        <h1 class="font-heading text-4xl md:text-5xl font-black text-white leading-[1.05] mb-5">
+          Ідеальний<br>силует.<br><span class="gold-text">Кожного дня.</span>
+        </h1>
+        <p class="text-muted text-base leading-relaxed mb-6 max-w-md">
+          Формуюче боді що підіймає груди, формує талію і залишається повністю невидимим під будь-яким вбранням
+        </p>
+
+        <!-- Price -->
+        <div class="flex items-baseline gap-4 mb-1">
+          <span class="font-heading text-4xl font-bold text-white">1 089 ₴</span>
+          <span class="text-dim line-through text-lg">1 689 ₴</span>
+          <span class="bg-red-900/40 text-red-400 text-xs font-bold px-2 py-1 rounded">−37%</span>
+        </div>
+        <p class="text-dim text-xs mb-5">Оплата при отриманні · Нова Пошта по всій Україні</p>
+
+        <!-- Colors -->
+        <div class="mb-5">
+          <p class="text-dim text-[10px] uppercase tracking-widest mb-3">Оберіть колір:</p>
+          <div class="flex gap-3">
+            <button onclick="switchColor('white')" class="swatch flex flex-col items-center gap-1.5" data-color="white">
+              <div class="w-10 h-10 rounded-full bg-white border-2 border-gold ring-2 ring-gold ring-offset-2 ring-offset-bg swatch-ring"></div>
+              <span class="text-[10px] text-gold">Білий</span>
+            </button>
+            <button onclick="switchColor('black')" class="swatch flex flex-col items-center gap-1.5" data-color="black">
+              <div class="w-10 h-10 rounded-full bg-[#1a1a1a] border-2 border-bord transition-colors"></div>
+              <span class="text-[10px] text-dim">Чорний</span>
+            </button>
+            <button onclick="switchColor('pink')" class="swatch flex flex-col items-center gap-1.5" data-color="pink">
+              <div class="w-10 h-10 rounded-full bg-[#FF5F8E] border-2 border-bord transition-colors"></div>
+              <span class="text-[10px] text-dim">Рожевий</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sizes -->
+        <div class="mb-6">
+          <p class="text-dim text-[10px] uppercase tracking-widest mb-3">Розмір:</p>
+          <div class="flex flex-wrap gap-2">
+            <button class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectSize(this)">S</button>
+            <button class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectSize(this)">M</button>
+            <button class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectSize(this)">L</button>
+            <button class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectSize(this)">XL</button>
+            <button class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectSize(this)">2XL</button>
+            <button class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectSize(this)">3XL</button>
+          </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class="bg-card border border-bord rounded-xl p-4 mb-5">
+          <p class="text-dim text-[10px] uppercase tracking-widest mb-3">⏱ Акція закінчується через:</p>
+          <div class="flex items-end gap-3 justify-center">
+            <div class="text-center"><div class="cd-num" id="t-h">23</div><div class="cd-lbl">год</div></div>
+            <div class="cd-num text-gold pb-4">:</div>
+            <div class="text-center"><div class="cd-num" id="t-m">59</div><div class="cd-lbl">хв</div></div>
+            <div class="cd-num text-gold pb-4">:</div>
+            <div class="text-center"><div class="cd-num" id="t-s">59</div><div class="cd-lbl">сек</div></div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <a href="#order" class="block w-full gold-grad text-black text-center py-4 px-8 rounded-xl font-heading font-bold text-lg mb-3 hover:opacity-90 transition-opacity">
+          Замовити зі знижкою →
+        </a>
+
+        <!-- Trust -->
+        <div class="flex flex-wrap items-center justify-center gap-5 pt-4 border-t border-bord">
+          <div class="flex items-center gap-1.5 text-dim text-xs">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            Нова Пошта
+          </div>
+          <div class="flex items-center gap-1.5 text-dim text-xs">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            Оплата при отриманні
+          </div>
+          <div class="flex items-center gap-1.5 text-dim text-xs">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            Повернення 14 днів
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TRUST BAR
+══════════════════════════════════════════════ -->
+<section class="bg-card border-y border-bord py-5 px-4">
+  <div class="max-w-4xl mx-auto grid grid-cols-3 gap-4 text-center">
+    <div>
+      <div class="font-heading text-2xl font-bold text-gold">3 847</div>
+      <div class="text-dim text-xs mt-0.5">задоволених клієнток</div>
+    </div>
+    <div class="border-x border-bord">
+      <div class="font-heading text-2xl font-bold text-gold">⭐ 4.9</div>
+      <div class="text-dim text-xs mt-0.5">середній рейтинг</div>
+    </div>
+    <div>
+      <div class="font-heading text-2xl font-bold text-gold">14 днів</div>
+      <div class="text-dim text-xs mt-0.5">гарантія повернення</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     PAIN SECTION
+══════════════════════════════════════════════ -->
+<section class="py-20 px-4 md:px-8 bg-bg">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-gold text-[10px] tracking-[.25em] uppercase text-center mb-3 fi">Знайомо?</p>
+    <h2 class="font-heading text-3xl md:text-4xl font-black text-white text-center mb-3 fi">Ці болі заважають<br>виглядати бездоганно</h2>
+    <p class="text-muted text-sm text-center mb-16 max-w-md mx-auto fi">Кожна з нас хоча б раз стикалася з цим перед виходом у світ</p>
+
+    <!-- Pain 1: photo LEFT -->
+    <div class="flex gap-6 md:gap-12 items-center mb-16 fi">
+      <div class="split-img">
+        <img src="images/b2.jpg" alt="Коригуюче боді — силует" class="w-full h-full object-cover object-top"/>
+      </div>
+      <div class="flex-1">
+        <div class="text-gold text-[10px] tracking-[.2em] uppercase mb-3">Біль № 1</div>
+        <h3 class="font-heading text-xl md:text-2xl font-bold text-white mb-3 leading-tight">Живіт і боки "видно" під сукнею</h3>
+        <p class="text-muted text-sm leading-relaxed">Кожне плаття перетворюється на квест — що одягнути знизу, щоб нічого не випирало. Замість радості від образу — стрес і компроміси.</p>
+      </div>
+    </div>
+
+    <div class="gold-line mb-16"></div>
+
+    <!-- Pain 2: photo RIGHT -->
+    <div class="flex gap-6 md:gap-12 items-center mb-16 fi flex-row-reverse">
+      <div class="split-img">
+        <img src="images/wback.jpg" alt="Боді — чиста відкрита спина" class="w-full h-full object-cover object-top"/>
+      </div>
+      <div class="flex-1">
+        <div class="text-gold text-[10px] tracking-[.2em] uppercase mb-3">Біль № 2</div>
+        <h3 class="font-heading text-xl md:text-2xl font-bold text-white mb-3 leading-tight">Лямки і застібки видно під відкритим вбранням</h3>
+        <p class="text-muted text-sm leading-relaxed">Відкрита спина, глибоке декольте або вузьке плаття — і одразу видно звичайний бюстгальтер. Красивий образ псується через дрібницю.</p>
+      </div>
+    </div>
+
+    <div class="gold-line mb-16"></div>
+
+    <!-- Pain 3: photo LEFT -->
+    <div class="flex gap-6 md:gap-12 items-center fi">
+      <div class="split-img">
+        <img src="images/b3.jpg" alt="Боді — ідеальна посадка" class="w-full h-full object-cover object-top"/>
+      </div>
+      <div class="flex-1">
+        <div class="text-gold text-[10px] tracking-[.2em] uppercase mb-3">Біль № 3</div>
+        <h3 class="font-heading text-xl md:text-2xl font-bold text-white mb-3 leading-tight">Сукня "не сидить" так як у магазині</h3>
+        <p class="text-muted text-sm leading-relaxed">На вішаку ідеально — на тілі не те. Бракує підтримки в грудях, форми в талії. Купуєш — і лишається розчарування замість впевненості.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     BRIDGE
+══════════════════════════════════════════════ -->
+<section class="py-20 px-4 bg-card border-y border-bord text-center fi">
+  <div class="max-w-2xl mx-auto">
+    <div class="text-gold text-4xl mb-6">✦</div>
+    <h2 class="font-heading text-3xl md:text-5xl font-black text-white leading-tight mb-5">
+      Одне боді.<br><span class="gold-text">Усі проблеми — вирішені.</span>
+    </h2>
+    <p class="text-muted text-base leading-relaxed max-w-lg mx-auto">Формуюче боді з пушапом — невидима основа ідеального образу під будь-яким вбранням</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     BENEFITS
+══════════════════════════════════════════════ -->
+<section class="py-20 px-4 md:px-8 bg-bg">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-gold text-[10px] tracking-[.25em] uppercase text-center mb-3 fi">Переваги</p>
+    <h2 class="font-heading text-3xl md:text-4xl font-black text-white text-center mb-16 fi">Чому обирають нас</h2>
+
+    <!-- Benefit 1: photo LEFT -->
+    <div class="flex gap-6 md:gap-12 items-center mb-16 fi">
+      <div class="split-img">
+        <img src="images/p1.jpg" alt="Пушап ефект — боді підіймає груди" class="w-full h-full object-cover object-top"/>
+      </div>
+      <div class="flex-1">
+        <div class="w-10 h-10 bg-gold/10 border border-gold/30 rounded-xl flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        </div>
+        <h3 class="font-heading text-xl md:text-2xl font-bold text-white mb-3">Пушап + корекція в одному</h3>
+        <p class="text-body text-sm font-medium leading-relaxed">Вбудовані чашечки підіймають і формують груди. Ущільнена вставка на животі та талії прибирає боки. Результат — одразу після одягання.</p>
+      </div>
+    </div>
+
+    <div class="gold-line mb-16"></div>
+
+    <!-- Benefit 2: photo RIGHT -->
+    <div class="flex gap-6 md:gap-12 items-center mb-16 fi flex-row-reverse">
+      <div class="split-img">
+        <img src="images/w2.jpg" alt="Боді — невидимий під одягом" class="w-full h-full object-cover object-top"/>
+      </div>
+      <div class="flex-1">
+        <div class="w-10 h-10 bg-gold/10 border border-gold/30 rounded-xl flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+        </div>
+        <h3 class="font-heading text-xl md:text-2xl font-bold text-white mb-3">Невидимий під будь-яким вбранням</h3>
+        <p class="text-body text-sm font-medium leading-relaxed">Знімні прозорі бретелі знімаються за секунду. Боді тримається без них завдяки кісточкам та силіконовим смужкам по краю. Ідеально під відкриту спину та глибоке декольте.</p>
+      </div>
+    </div>
+
+    <div class="gold-line mb-16"></div>
+
+    <!-- Benefit 3: photo LEFT -->
+    <div class="flex gap-6 md:gap-12 items-center fi">
+      <div class="split-img">
+        <img src="images/b1.jpg" alt="Розміри боді S до 3XL" class="w-full h-full object-cover object-top"/>
+      </div>
+      <div class="flex-1">
+        <div class="w-10 h-10 bg-gold/10 border border-gold/30 rounded-xl flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+        </div>
+        <h3 class="font-heading text-xl md:text-2xl font-bold text-white mb-3">Розміри S — 3XL</h3>
+        <p class="text-body text-sm font-medium leading-relaxed">Широкий розмірний ряд від 42 до 56 розміру. Детальна таблиця з обмірами допоможе знайти ідеальний розмір з першого разу.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     GALLERY
+══════════════════════════════════════════════ -->
+<section class="py-16 px-4 md:px-8 bg-card fi">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-gold text-[10px] tracking-[.25em] uppercase text-center mb-3">Фото товару</p>
+    <h2 class="font-heading text-2xl md:text-3xl font-black text-white text-center mb-8">Оберіть свій колір</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="rounded-2xl overflow-hidden aspect-[3/4] shadow-lg"><img src="images/w1.jpg" alt="Боді біле — спереду" class="gallery-img" loading="lazy"/></div>
+      <div class="rounded-2xl overflow-hidden aspect-[3/4] shadow-lg"><img src="images/b2.jpg" alt="Боді чорне — сходи" class="gallery-img" loading="lazy"/></div>
+      <div class="rounded-2xl overflow-hidden aspect-[3/4] shadow-lg"><img src="images/p1.jpg" alt="Боді рожеве — bedroom" class="gallery-img" loading="lazy"/></div>
+      <div class="rounded-2xl overflow-hidden aspect-[3/4] shadow-lg"><img src="images/b3.jpg" alt="Боді чорне — editorial" class="gallery-img" loading="lazy"/></div>
+    </div>
+    <div class="text-center mt-8">
+      <a href="#order" class="inline-block gold-grad text-black py-3.5 px-10 rounded-xl font-heading font-bold hover:opacity-90 transition-opacity">Хочу таке боді →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SIZE TABLE
+══════════════════════════════════════════════ -->
+<section class="py-16 px-4 md:px-8 bg-bg fi">
+  <div class="max-w-2xl mx-auto">
+    <p class="text-gold text-[10px] tracking-[.25em] uppercase text-center mb-3">Розміри</p>
+    <h2 class="font-heading text-2xl font-black text-white text-center mb-2">Таблиця розмірів</h2>
+    <p class="text-muted text-sm text-center mb-8">Заміряйте обхват грудей та талії — і знайдіть свій розмір</p>
+    <div class="overflow-x-auto rounded-xl border border-bord">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-card2 border-b border-bord">
+            <th class="py-3 px-4 text-left text-dim text-xs uppercase tracking-wider font-medium">Розмір</th>
+            <th class="py-3 px-4 text-center text-dim text-xs uppercase tracking-wider font-medium">Груди (см)</th>
+            <th class="py-3 px-4 text-center text-dim text-xs uppercase tracking-wider font-medium">Талія (см)</th>
+            <th class="py-3 px-4 text-center text-dim text-xs uppercase tracking-wider font-medium">Стегна (см)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-bord hover:bg-card2/50 transition-colors"><td class="py-3 px-4 text-gold font-bold">S</td><td class="py-3 px-4 text-center text-body">80–84</td><td class="py-3 px-4 text-center text-body">60–64</td><td class="py-3 px-4 text-center text-body">86–90</td></tr>
+          <tr class="border-b border-bord hover:bg-card2/50 transition-colors"><td class="py-3 px-4 text-gold font-bold">M</td><td class="py-3 px-4 text-center text-body">84–88</td><td class="py-3 px-4 text-center text-body">64–68</td><td class="py-3 px-4 text-center text-body">90–94</td></tr>
+          <tr class="border-b border-bord hover:bg-card2/50 transition-colors"><td class="py-3 px-4 text-gold font-bold">L</td><td class="py-3 px-4 text-center text-body">88–92</td><td class="py-3 px-4 text-center text-body">68–72</td><td class="py-3 px-4 text-center text-body">94–98</td></tr>
+          <tr class="border-b border-bord hover:bg-card2/50 transition-colors"><td class="py-3 px-4 text-gold font-bold">XL</td><td class="py-3 px-4 text-center text-body">92–96</td><td class="py-3 px-4 text-center text-body">72–76</td><td class="py-3 px-4 text-center text-body">98–104</td></tr>
+          <tr class="border-b border-bord hover:bg-card2/50 transition-colors"><td class="py-3 px-4 text-gold font-bold">2XL</td><td class="py-3 px-4 text-center text-body">96–102</td><td class="py-3 px-4 text-center text-body">76–82</td><td class="py-3 px-4 text-center text-body">104–110</td></tr>
+          <tr class="hover:bg-card2/50 transition-colors"><td class="py-3 px-4 text-gold font-bold">3XL</td><td class="py-3 px-4 text-center text-body">102–108</td><td class="py-3 px-4 text-center text-body">82–88</td><td class="py-3 px-4 text-center text-body">110–116</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-dim text-xs text-center mt-3">Якщо між розмірами — обирайте більший</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     REVIEWS
+══════════════════════════════════════════════ -->
+<section class="py-16 px-4 md:px-8 bg-card fi">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-gold text-[10px] tracking-[.25em] uppercase text-center mb-3">Відгуки</p>
+    <h2 class="font-heading text-2xl md:text-3xl font-black text-white text-center mb-10">Що кажуть наші клієнтки</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <div class="bg-bg border border-bord rounded-2xl p-5">
+        <div class="text-gold mb-3 text-sm tracking-wider">★★★★★</div>
+        <p class="text-body text-sm leading-relaxed mb-4">"Нарешті знайшла боді, яке не видно під відкритою сукнею! Замовляла до корпоративу — всі питали де купила плаття, ніхто не здогадався про боді"</p>
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs font-bold flex-shrink-0">О</div>
+          <div><div class="text-white text-xs font-medium">Оксана К.</div><div class="text-dim text-[10px]">Київ · ✓ Верифікована покупка</div></div>
+        </div>
+      </div>
+
+      <div class="bg-bg border border-bord rounded-2xl p-5">
+        <div class="text-gold mb-3 text-sm tracking-wider">★★★★★</div>
+        <p class="text-body text-sm leading-relaxed mb-4">"Пушап реально працює — це не маркетинг. Замовила біле і чорне. Ношу під усим. Навіть з джинсами зверху — вигляд одразу інший"</p>
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs font-bold flex-shrink-0">М</div>
+          <div><div class="text-white text-xs font-medium">Марина Д.</div><div class="text-dim text-[10px]">Харків · ✓ Верифікована покупка</div></div>
+        </div>
+      </div>
+
+      <div class="bg-bg border border-bord rounded-2xl p-5">
+        <div class="text-gold mb-3 text-sm tracking-wider">★★★★★</div>
+        <p class="text-body text-sm leading-relaxed mb-4">"Брала XL — сів ідеально. Тканина приємна, не давить і не натирає. Ношу весь день — не відчуваю жодного дискомфорту. Рекомендую!"</p>
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs font-bold flex-shrink-0">Н</div>
+          <div><div class="text-white text-xs font-medium">Наталія В.</div><div class="text-dim text-[10px]">Одеса · ✓ Верифікована покупка</div></div>
+        </div>
+      </div>
+
+      <div class="bg-bg border border-bord rounded-2xl p-5">
+        <div class="text-gold mb-3 text-sm tracking-wider">★★★★★</div>
+        <p class="text-body text-sm leading-relaxed mb-4">"Бретелі знімаються легко — перевірила одразу. Під плаття з відкритою спиною — ідеал. Буду купувати рожеве ще!"</p>
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs font-bold flex-shrink-0">А</div>
+          <div><div class="text-white text-xs font-medium">Аліна С.</div><div class="text-dim text-[10px]">Дніпро · ✓ Верифікована покупка</div></div>
+        </div>
+      </div>
+
+      <div class="bg-bg border border-bord rounded-2xl p-5">
+        <div class="text-gold mb-3 text-sm tracking-wider">★★★★★</div>
+        <p class="text-body text-sm leading-relaxed mb-4">"Замовила з трусиками в комплекті — вийшло дуже вигідно. Трусики теж чудові, не зміщуються. Загалом дуже задоволена!"</p>
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs font-bold flex-shrink-0">К</div>
+          <div><div class="text-white text-xs font-medium">Катерина П.</div><div class="text-dim text-[10px]">Львів · ✓ Верифікована покупка</div></div>
+        </div>
+      </div>
+
+      <div class="bg-bg border border-bord rounded-2xl p-5">
+        <div class="text-gold mb-3 text-sm tracking-wider">★★★★★</div>
+        <p class="text-body text-sm leading-relaxed mb-4">"Доставка за 2 дні після замовлення. Якість відповідає фото. Приємно здивована. Вже порадила подрузі — вона теж замовила"</p>
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs font-bold flex-shrink-0">І</div>
+          <div><div class="text-white text-xs font-medium">Ірина Т.</div><div class="text-dim text-[10px]">Запоріжжя · ✓ Верифікована покупка</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     UPSELL
+══════════════════════════════════════════════ -->
+<section class="py-16 px-4 md:px-8 bg-bg fi">
+  <div class="max-w-lg mx-auto">
+    <div class="bg-card border border-gold/40 rounded-2xl p-6 md:p-8">
+      <div class="flex items-start gap-4 mb-6">
+        <div class="w-12 h-12 bg-gold/10 border border-gold/30 rounded-xl flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+        </div>
+        <div>
+          <div class="text-gold text-[10px] tracking-widest uppercase mb-1">Спеціальна пропозиція</div>
+          <h3 class="font-heading text-xl font-bold text-white">Додай коригуючі трусики</h3>
+          <p class="text-muted text-sm mt-1">Сет — чорні + бежеві. Ідеально доповнюють боді.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between bg-card2 rounded-xl p-4 mb-5">
+        <div>
+          <div class="text-white text-xl font-bold">429 ₴</div>
+          <div class="text-dim text-xs line-through">689 ₴</div>
+        </div>
+        <div class="bg-red-900/40 text-red-400 text-xs font-bold px-3 py-1.5 rounded-lg">−38%</div>
+      </div>
+      <label class="flex items-start gap-3 cursor-pointer">
+        <input type="checkbox" id="upsell-check" class="mt-0.5 w-5 h-5 accent-[#D4A843] cursor-pointer" onchange="updateTotal()"/>
+        <div>
+          <span class="text-body text-sm font-medium">Так, додати трусики (чорні + бежеві) за 429 ₴</span>
+          <span class="block text-dim text-xs mt-0.5">Знижка діє лише при замовленні разом з боді</span>
+        </div>
+      </label>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════════ -->
+<section class="py-16 px-4 md:px-8 bg-card fi">
+  <div class="max-w-2xl mx-auto">
+    <p class="text-gold text-[10px] tracking-[.25em] uppercase text-center mb-3">FAQ</p>
+    <h2 class="font-heading text-2xl md:text-3xl font-black text-white text-center mb-10">Часті запитання</h2>
+    <div class="space-y-3">
+
+      <div class="border border-bord rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-5 py-4 text-left hover:bg-card2/50 transition-colors bg-card" onclick="toggleFaq(this)">
+          <span class="font-medium text-white text-sm pr-4">Бретелі справді знімаються?</span>
+          <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-body bg-card2 px-5">
+          <p class="text-muted text-sm leading-relaxed py-4">Так, бретелі повністю знімні. Кріпляться на прозорих силіконових петлях і знімаються за секунду. Боді тримається без них завдяки вбудованим кісточкам та силіконовим смужкам по краю чашечок.</p>
+        </div>
+      </div>
+
+      <div class="border border-bord rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-5 py-4 text-left hover:bg-card2/50 transition-colors bg-card" onclick="toggleFaq(this)">
+          <span class="font-medium text-white text-sm pr-4">Як визначити свій розмір?</span>
+          <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-body bg-card2 px-5">
+          <p class="text-muted text-sm leading-relaxed py-4">Заміряйте обхват грудей і талії сантиметровою стрічкою та звірте з таблицею вище. Якщо ви між розмірами — беріть більший: боді тягнеться і "сяде" ідеально.</p>
+        </div>
+      </div>
+
+      <div class="border border-bord rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-5 py-4 text-left hover:bg-card2/50 transition-colors bg-card" onclick="toggleFaq(this)">
+          <span class="font-medium text-white text-sm pr-4">Яка доставка і спосіб оплати?</span>
+          <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-body bg-card2 px-5">
+          <p class="text-muted text-sm leading-relaxed py-4">Доставка Новою Поштою по всій Україні. Оплата при отриманні на відділенні або кур'єром. Термін доставки 1–3 робочі дні.</p>
+        </div>
+      </div>
+
+      <div class="border border-bord rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-5 py-4 text-left hover:bg-card2/50 transition-colors bg-card" onclick="toggleFaq(this)">
+          <span class="font-medium text-white text-sm pr-4">Чи можна повернути, якщо не підійшов розмір?</span>
+          <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-body bg-card2 px-5">
+          <p class="text-muted text-sm leading-relaxed py-4">Так, повернення або обмін протягом 14 днів згідно Закону України "Про захист прав споживачів". Товар має бути в оригінальному вигляді без слідів використання.</p>
+        </div>
+      </div>
+
+      <div class="border border-bord rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-5 py-4 text-left hover:bg-card2/50 transition-colors bg-card" onclick="toggleFaq(this)">
+          <span class="font-medium text-white text-sm pr-4">Чи зручно носити цілий день?</span>
+          <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-body bg-card2 px-5">
+          <p class="text-muted text-sm leading-relaxed py-4">Так. Матеріал — м'яка мікрофібра з еластаном. Не натирає, не ріже, дає шкірі дихати. Знизу зручна застібка для відвідування туалету без повного роздягання.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     ORDER FORM
+══════════════════════════════════════════════ -->
+<section id="order" class="py-16 px-4 md:px-8 bg-bg fi">
+  <div class="max-w-lg mx-auto">
+    <p class="text-gold text-[10px] tracking-[.25em] uppercase text-center mb-3">Замовити</p>
+    <h2 class="font-heading text-2xl md:text-3xl font-black text-white text-center mb-2">Оформити замовлення</h2>
+    <p class="text-muted text-center text-sm mb-8">Заповни форму — зателефонуємо протягом 30 хвилин</p>
+
+    <!-- Price reminder -->
+    <div class="bg-card border border-bord rounded-xl p-4 mb-6">
+      <div class="flex items-center justify-between mb-1">
+        <span class="text-muted text-xs">Формуюче боді з пушапом</span>
+        <span class="text-white font-bold">1 089 ₴</span>
+      </div>
+      <div id="upsell-line" class="hidden flex items-center justify-between mb-1">
+        <span class="text-muted text-xs">Трусики (сет чорні + бежеві)</span>
+        <span class="text-white font-bold">429 ₴</span>
+      </div>
+      <div class="gold-line my-3"></div>
+      <div class="flex items-center justify-between">
+        <span class="text-dim text-xs">Разом до сплати:</span>
+        <span id="total-price" class="font-heading text-xl font-bold text-gold">1 089 ₴</span>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form id="order-form" onsubmit="submitOrder(event)">
+      <div class="space-y-3 mb-5">
+        <input type="text" name="name" class="form-input" placeholder="Ваше ім'я" required/>
+        <input type="tel" name="phone" class="form-input" placeholder="+380 __ ___ __ __" required/>
+        <div class="bg-card2 border border-bord rounded-xl p-4">
+          <p class="text-dim text-[10px] uppercase tracking-wider mb-3">Розмір боді:</p>
+          <div class="flex flex-wrap gap-2" id="form-sizes">
+            <button type="button" class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectFormSize(this,'S')">S</button>
+            <button type="button" class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectFormSize(this,'M')">M</button>
+            <button type="button" class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectFormSize(this,'L')">L</button>
+            <button type="button" class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectFormSize(this,'XL')">XL</button>
+            <button type="button" class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectFormSize(this,'2XL')">2XL</button>
+            <button type="button" class="sz w-12 h-12 border border-bord rounded-lg text-sm text-muted font-medium" onclick="selectFormSize(this,'3XL')">3XL</button>
+          </div>
+          <input type="hidden" name="size" id="selected-size" value=""/>
+        </div>
+      </div>
+      <button type="submit" class="w-full gold-grad text-black py-4 px-8 rounded-xl font-heading font-bold text-lg hover:opacity-90 transition-opacity">
+        Замовити зі знижкою →
+      </button>
+      <p class="text-center text-dim text-xs mt-3">Натискаючи кнопку, ви погоджуєтесь з <a href="/oferta" class="text-gold/60 hover:text-gold transition-colors">офертою</a></p>
+    </form>
+
+    <div id="order-success" class="hidden text-center py-12">
+      <div class="w-16 h-16 bg-gold/10 border border-gold/30 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-8 h-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h3 class="font-heading text-xl font-bold text-white mb-2">Замовлення прийнято!</h3>
+      <p class="text-muted text-sm">Ми зателефонуємо вам протягом 30 хвилин для підтвердження.</p>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-center gap-5 mt-8 pt-6 border-t border-bord">
+      <div class="flex items-center gap-1.5 text-dim text-xs"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>Безпечна оплата</div>
+      <div class="flex items-center gap-1.5 text-dim text-xs"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>Нова Пошта</div>
+      <div class="flex items-center gap-1.5 text-dim text-xs"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>Повернення 14 днів</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer class="bg-card border-t border-bord py-8 px-4 pb-24 md:pb-8">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="font-heading text-gold text-sm tracking-[.2em] mb-4">FORMUUCHE BODI</p>
+    <p class="text-dim text-xs leading-loose">
+      ФОП · Нова Пошта · Оплата при отриманні<br>
+      Повернення 14 днів згідно ЗУ "Про захист прав споживачів" ·
+      <a href="/oferta" class="text-gold/50 hover:text-gold transition-colors">Публічна оферта</a>
+    </p>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════════
+     STICKY MOBILE CTA
+══════════════════════════════════════════════ -->
+<div class="sticky-cta">
+  <a href="#order" class="block w-full gold-grad text-black text-center py-4 rounded-xl font-heading font-bold text-base hover:opacity-90 transition-opacity">
+    Замовити зі знижкою — 1 089 ₴ →
+  </a>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════════ -->
+<script>
+// ── Countdown Timer ──────────────────────────────
+(function(){
+  var KEY='formuuche_end_v1';
+  var end=parseInt(localStorage.getItem(KEY)||'0');
+  if(!end||Date.now()>end){end=Date.now()+(23*3600+59*60+59)*1000;localStorage.setItem(KEY,end);}
+  function tick(){
+    var left=Math.max(0,end-Date.now());
+    document.getElementById('t-h').textContent=String(Math.floor(left/3600000)).padStart(2,'0');
+    document.getElementById('t-m').textContent=String(Math.floor(left%3600000/60000)).padStart(2,'0');
+    document.getElementById('t-s').textContent=String(Math.floor(left%60000/1000)).padStart(2,'0');
+  }
+  tick();setInterval(tick,1000);
+})();
+
+// ── Color switcher ───────────────────────────────
+var heroImgs={white:'images/w1.jpg',black:'images/b1.jpg',pink:'images/p1.jpg'};
+function switchColor(c){
+  var img=document.getElementById('hero-img');
+  img.style.opacity='0';
+  setTimeout(function(){img.src=heroImgs[c];img.style.opacity='1';},150);
+  document.querySelectorAll('.color-thumb').forEach(function(el){
+    el.style.borderColor=el.dataset.color===c?'#D4A843':'#2A2A2A';
+  });
+  document.querySelectorAll('.swatch').forEach(function(el){
+    var circle=el.querySelector('div');
+    var label=el.querySelector('span');
+    if(el.dataset.color===c){circle.style.borderColor='#D4A843';if(label)label.style.color='#D4A843';}
+    else{circle.style.borderColor='#2A2A2A';if(label)label.style.color='#555';}
+  });
+}
+
+// ── Size selector ────────────────────────────────
+function selectSize(btn){
+  btn.closest('.flex').querySelectorAll('.sz').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+}
+function selectFormSize(btn,size){
+  document.querySelectorAll('#form-sizes .sz').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+  document.getElementById('selected-size').value=size;
+}
+
+// ── Upsell total ─────────────────────────────────
+function updateTotal(){
+  var has=document.getElementById('upsell-check').checked;
+  document.getElementById('total-price').textContent=(has?1518:1089).toLocaleString('uk-UA')+' ₴';
+  var line=document.getElementById('upsell-line');
+  if(line){has?line.classList.remove('hidden'):line.classList.add('hidden');}
+}
+
+// ── FAQ ──────────────────────────────────────────
+function toggleFaq(btn){
+  var body=btn.nextElementSibling;
+  var open=body.classList.contains('open');
+  document.querySelectorAll('.faq-body').forEach(function(b){b.classList.remove('open');});
+  document.querySelectorAll('.faq-btn').forEach(function(b){b.classList.remove('faq-open');});
+  if(!open){body.classList.add('open');btn.classList.add('faq-open');}
+}
+
+// ── Form submit ──────────────────────────────────
+function submitOrder(e){
+  e.preventDefault();
+  var f=e.target;
+  fetch('https://YOUR_WORKER.workers.dev/submit',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      name:f.name.value,
+      phone:f.phone.value,
+      size:document.getElementById('selected-size').value||'не обрано',
+      upsell:document.getElementById('upsell-check').checked?'Так — трусики +429₴':'Ні',
+      total:document.getElementById('total-price').textContent,
+      product:'Формуюче боді /formuuche-bodi/',
+    })
+  }).finally(function(){
+    document.getElementById('order-form').classList.add('hidden');
+    document.getElementById('order-success').classList.remove('hidden');
+  });
+}
+
+// ── Fade-in scroll ───────────────────────────────
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});
+},{threshold:0.1});
+document.querySelectorAll('.fi').forEach(function(el){obs.observe(el);});
+</script>
+
+</body>
+</html>

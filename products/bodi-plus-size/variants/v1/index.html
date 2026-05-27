@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Боді Plus Size — Пушап + Корекція | L–5XL | 1089 ₴</title>
+<meta name="description" content="Формуюче боді для пишних форм. Пушап, корекція талії та стегон, невидимий під одягом. Розміри L–5XL. Купити за 1089 ₴. Нова Пошта по Україні.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        gold: '#D4A843',
+        gold2: '#C4916A',
+        card: '#111111',
+        card2: '#1A1A1A',
+        border: '#2A2A2A',
+        muted: '#777777',
+      },
+      fontFamily: {
+        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #0D0D0D; color: #fff; }
+
+  .fi { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+  .fi.visible { opacity: 1; transform: none; }
+
+  .gold-divider { height: 1px; background: linear-gradient(90deg, transparent, #D4A843, transparent); }
+
+  .size-btn { border: 1px solid #2A2A2A; color: #777; transition: all .2s; cursor: pointer; background: transparent; }
+  .size-btn:hover { border-color: #D4A843; color: #D4A843; }
+  .size-btn.active { background: #D4A843; border-color: #D4A843; color: #0D0D0D; font-weight: 700; }
+
+  .thumb { cursor: pointer; transition: all .2s; opacity: .55; border: 2px solid transparent; border-radius: 10px; overflow: hidden; flex-shrink: 0; }
+  .thumb.active { opacity: 1; border-color: #D4A843; }
+
+  .pain-card { background: #111; border: 1px solid #2A2A2A; }
+  .sol-card { background: linear-gradient(135deg,#1a1200,#231800); border: 1px solid #D4A843; }
+
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+  .faq-answer.open { max-height: 200px; }
+
+  input { outline: none; }
+  input:focus { border-color: #D4A843 !important; }
+
+  @media(max-width:768px) { .sticky-cta { display: flex !important; } }
+  @media(min-width:769px) { .sticky-cta { display: none !important; } }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav style="position:sticky;top:0;z-index:50;background:rgba(13,13,13,.96);backdrop-filter:blur(8px);border-bottom:1px solid #2A2A2A;">
+  <div style="max-width:72rem;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <span style="font-family:'Playfair Display',serif;color:#D4A843;font-size:18px;letter-spacing:2px;">FORMUUCHE</span>
+      <span style="display:none;font-size:10px;color:#777;letter-spacing:3px;text-transform:uppercase;" class="md:block">Plus Size</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span style="background:rgba(212,168,67,.1);border:1px solid rgba(212,168,67,.3);color:#D4A843;font-size:11px;padding:4px 12px;border-radius:20px;font-weight:600;">−35% СЬОГОДНІ</span>
+      <button onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})"
+        style="background:linear-gradient(90deg,#D4A843,#C4916A);color:#0D0D0D;font-weight:700;font-size:13px;padding:8px 18px;border-radius:8px;border:none;cursor:pointer;display:none;" id="navCta">
+        Замовити — 1 089 ₴
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="max-width:72rem;margin:0 auto;padding:32px 16px 40px;">
+  <div style="display:grid;grid-template-columns:1fr;gap:32px;" id="heroGrid">
+
+    <!-- Photo -->
+    <div>
+      <div style="position:relative;border-radius:20px;overflow:hidden;background:#111;aspect-ratio:3/4;">
+        <img id="heroImg" src="images/ps_w1.jpg" alt="Боді plus size формуючий" style="width:100%;height:100%;object-fit:cover;transition:opacity .35s ease;">
+        <div style="position:absolute;top:14px;left:14px;background:rgba(13,13,13,.85);border:1px solid rgba(212,168,67,.4);border-radius:8px;padding:6px 12px;">
+          <div style="color:#D4A843;font-size:10px;font-weight:700;letter-spacing:2px;">PLUS SIZE L–5XL</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:10px;">
+        <button onclick="switchColor('w',event)" class="thumb active" style="width:64px;height:72px;">
+          <img src="images/ps_w1.jpg" style="width:100%;height:100%;object-fit:cover;">
+        </button>
+        <button onclick="switchColor('b',event)" class="thumb" style="width:64px;height:72px;">
+          <img src="images/ps_b1.jpg" style="width:100%;height:100%;object-fit:cover;">
+        </button>
+        <button onclick="switchColor('wb',event)" class="thumb" style="width:64px;height:72px;">
+          <img src="images/ps_wback.jpg" style="width:100%;height:100%;object-fit:cover;">
+        </button>
+        <button onclick="switchColor('bb',event)" class="thumb" style="width:64px;height:72px;">
+          <img src="images/ps_bback.jpg" style="width:100%;height:100%;object-fit:cover;">
+        </button>
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div>
+        <div style="color:#D4A843;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;">Пишні форми · Пушап · Корекція</div>
+        <h1 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;line-height:1.2;margin-bottom:12px;">
+          Боді що робить<br><span style="color:#D4A843;">талію — тонше,</span><br>груди — вище
+        </h1>
+        <p style="color:#777;font-size:14px;line-height:1.7;">
+          Корсетні кісточки утягують талію на 8–12 см. Пушап-чашки підтримують груди без окремого бюстгальтера. Прозорі знімні лямки — невидимий під будь-яким одягом.
+        </p>
+      </div>
+
+      <!-- Sizes -->
+      <div>
+        <div style="font-size:11px;color:#777;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px;">Виберіть розмір</div>
+        <div id="heroSizes" style="display:flex;flex-wrap:wrap;gap:8px;">
+          <button class="size-btn" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectSize(this,'L')">L</button>
+          <button class="size-btn" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectSize(this,'XL')">XL</button>
+          <button class="size-btn active" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectSize(this,'2XL')">2XL</button>
+          <button class="size-btn" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectSize(this,'3XL')">3XL</button>
+          <button class="size-btn" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectSize(this,'4XL')">4XL</button>
+          <button class="size-btn" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectSize(this,'5XL')">5XL</button>
+        </div>
+      </div>
+
+      <!-- Price + Timer -->
+      <div style="background:#111;border:1px solid #2A2A2A;border-radius:16px;padding:18px;">
+        <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px;">
+          <span style="font-size:32px;font-weight:700;color:#D4A843;">1 089 ₴</span>
+          <span style="color:#555;text-decoration:line-through;font-size:18px;">1 689 ₴</span>
+          <span style="background:rgba(212,168,67,.1);color:#D4A843;font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;">−35%</span>
+        </div>
+        <div style="font-size:11px;color:#555;margin-bottom:6px;">Ціна зросте через:</div>
+        <div style="display:flex;gap:12px;">
+          <div style="text-align:center;">
+            <div id="tH" style="font-size:26px;font-weight:700;color:#D4A843;line-height:1;">00</div>
+            <div style="font-size:9px;color:#555;text-transform:uppercase;letter-spacing:1px;margin-top:2px;">год</div>
+          </div>
+          <div style="font-size:22px;font-weight:700;color:#D4A843;align-self:flex-start;margin-top:2px;">:</div>
+          <div style="text-align:center;">
+            <div id="tM" style="font-size:26px;font-weight:700;color:#D4A843;line-height:1;">00</div>
+            <div style="font-size:9px;color:#555;text-transform:uppercase;letter-spacing:1px;margin-top:2px;">хв</div>
+          </div>
+          <div style="font-size:22px;font-weight:700;color:#D4A843;align-self:flex-start;margin-top:2px;">:</div>
+          <div style="text-align:center;">
+            <div id="tS" style="font-size:26px;font-weight:700;color:#D4A843;line-height:1;">00</div>
+            <div style="font-size:9px;color:#555;text-transform:uppercase;letter-spacing:1px;margin-top:2px;">сек</div>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})"
+        style="background:linear-gradient(90deg,#D4A843,#C4916A);color:#0D0D0D;font-weight:700;font-size:17px;padding:16px;border-radius:14px;border:none;cursor:pointer;width:100%;transition:opacity .2s;" onmouseover="this.style.opacity='.88'" onmouseout="this.style.opacity='1'">
+        Замовити зі знижкою →
+      </button>
+      <div style="display:flex;gap:16px;font-size:12px;color:#555;flex-wrap:wrap;">
+        <span>✓ Нова Пошта</span>
+        <span>✓ Оплата при отриманні</span>
+        <span>✓ 14 днів повернення</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     ANNOTATED PHOTO — 5 зон корекції
+═══════════════════════════════════════════════════════ -->
+<section style="background:#1A1A1A;border-top:1px solid #2A2A2A;border-bottom:1px solid #2A2A2A;padding:56px 16px;">
+  <div style="max-width:64rem;margin:0 auto;">
+
+    <div class="fi" style="text-align:center;margin-bottom:36px;">
+      <div style="color:#D4A843;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;">Як це працює</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;">
+        Одне боді — <span style="color:#D4A843;">5 зон корекції</span>
+      </h2>
+      <p style="color:#777;font-size:13px;margin-top:8px;">Корсетні кісточки + пушап-чашки + прозорі лямки</p>
+    </div>
+
+    <!-- Annotated photo -->
+    <div class="fi" style="max-width:380px;margin:0 auto;position:relative;">
+      <div style="border-radius:20px;overflow:hidden;line-height:0;">
+        <img src="images/ps_w3.jpg" alt="5 зон корекції боді plus size" style="width:100%;display:block;">
+      </div>
+
+      <!-- SVG overlay with callout annotations -->
+      <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;"
+           viewBox="0 0 300 400" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <marker id="arr" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
+            <path d="M0,0.5 L6.5,3.5 L0,6.5 Z" fill="#D4A843"/>
+          </marker>
+        </defs>
+
+        <!-- ① PUSHUP — top center label + 2 arrows to bust -->
+        <rect x="82" y="62" width="136" height="32" rx="5"
+              fill="rgba(13,13,13,0.92)" stroke="#D4A843" stroke-width="0.9"/>
+        <text x="150" y="75" text-anchor="middle"
+              fill="#D4A843" font-size="9" font-weight="700" font-family="Inter,sans-serif">ПУШАП + ПІДТРИМКА</text>
+        <text x="150" y="87" text-anchor="middle"
+              fill="#aaa" font-size="7.5" font-family="Inter,sans-serif">без бюстгальтера</text>
+        <line x1="136" y1="94" x2="132" y2="124"
+              stroke="#D4A843" stroke-width="1.5" stroke-dasharray="3,2.5" marker-end="url(#arr)"/>
+        <line x1="164" y1="94" x2="168" y2="124"
+              stroke="#D4A843" stroke-width="1.5" stroke-dasharray="3,2.5" marker-end="url(#arr)"/>
+
+        <!-- ② WAIST — left label + arrow right -->
+        <rect x="1" y="176" width="102" height="32" rx="5"
+              fill="rgba(13,13,13,0.92)" stroke="#D4A843" stroke-width="0.9"/>
+        <text x="52" y="189" text-anchor="middle"
+              fill="#D4A843" font-size="9" font-weight="700" font-family="Inter,sans-serif">УТЯЖКА ТАЛІЇ</text>
+        <text x="52" y="201" text-anchor="middle"
+              fill="#aaa" font-size="7.5" font-family="Inter,sans-serif">−8–12 см в обхваті</text>
+        <line x1="103" y1="192" x2="112" y2="195"
+              stroke="#D4A843" stroke-width="1.5" stroke-dasharray="3,2.5" marker-end="url(#arr)"/>
+
+        <!-- ③ HIPS — left lower label -->
+        <rect x="1" y="234" width="84" height="32" rx="5"
+              fill="rgba(13,13,13,0.92)" stroke="#D4A843" stroke-width="0.9"/>
+        <text x="43" y="247" text-anchor="middle"
+              fill="#D4A843" font-size="9" font-weight="700" font-family="Inter,sans-serif">СТЕГНА</text>
+        <text x="43" y="259" text-anchor="middle"
+              fill="#aaa" font-size="7.5" font-family="Inter,sans-serif">формує силует</text>
+        <line x1="85" y1="250" x2="94" y2="248"
+              stroke="#D4A843" stroke-width="1.5" stroke-dasharray="3,2.5" marker-end="url(#arr)"/>
+
+        <!-- ④ STRAPS — right top label -->
+        <rect x="197" y="56" width="102" height="32" rx="5"
+              fill="rgba(13,13,13,0.92)" stroke="#D4A843" stroke-width="0.9"/>
+        <text x="248" y="69" text-anchor="middle"
+              fill="#D4A843" font-size="9" font-weight="700" font-family="Inter,sans-serif">ПРОЗОРІ ЛЯМКИ</text>
+        <text x="248" y="81" text-anchor="middle"
+              fill="#aaa" font-size="7.5" font-family="Inter,sans-serif">знімні, невидимі</text>
+        <line x1="197" y1="72" x2="183" y2="88"
+              stroke="#D4A843" stroke-width="1.5" stroke-dasharray="3,2.5" marker-end="url(#arr)"/>
+
+        <!-- ⑤ SIDES+TUMMY — right middle label -->
+        <rect x="197" y="176" width="102" height="32" rx="5"
+              fill="rgba(13,13,13,0.92)" stroke="#D4A843" stroke-width="0.9"/>
+        <text x="248" y="189" text-anchor="middle"
+              fill="#D4A843" font-size="9" font-weight="700" font-family="Inter,sans-serif">БОКИ + ЖИВІТ</text>
+        <text x="248" y="201" text-anchor="middle"
+              fill="#aaa" font-size="7.5" font-family="Inter,sans-serif">коректує і згладжує</text>
+        <line x1="197" y1="192" x2="185" y2="195"
+              stroke="#D4A843" stroke-width="1.5" stroke-dasharray="3,2.5" marker-end="url(#arr)"/>
+      </svg>
+    </div>
+
+    <!-- 5 zone cards -->
+    <div class="fi" style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:28px;max-width:480px;margin-left:auto;margin-right:auto;">
+      <div style="background:#111;border:1px solid #2A2A2A;border-radius:14px;padding:14px;text-align:center;">
+        <div style="color:#D4A843;font-size:20px;margin-bottom:4px;">↑</div>
+        <div style="color:#D4A843;font-size:12px;font-weight:700;">Пушап</div>
+        <div style="color:#555;font-size:10px;margin-top:2px;">+5 см об'єму</div>
+      </div>
+      <div style="background:#111;border:1px solid #2A2A2A;border-radius:14px;padding:14px;text-align:center;">
+        <div style="color:#D4A843;font-size:20px;margin-bottom:4px;">↔</div>
+        <div style="color:#D4A843;font-size:12px;font-weight:700;">Талія</div>
+        <div style="color:#555;font-size:10px;margin-top:2px;">−8–12 см</div>
+      </div>
+      <div style="background:#111;border:1px solid #2A2A2A;border-radius:14px;padding:14px;text-align:center;">
+        <div style="color:#D4A843;font-size:20px;margin-bottom:4px;">◈</div>
+        <div style="color:#D4A843;font-size:12px;font-weight:700;">Живіт</div>
+        <div style="color:#555;font-size:10px;margin-top:2px;">плоский ефект</div>
+      </div>
+      <div style="background:#111;border:1px solid #2A2A2A;border-radius:14px;padding:14px;text-align:center;">
+        <div style="color:#D4A843;font-size:20px;margin-bottom:4px;">~</div>
+        <div style="color:#D4A843;font-size:12px;font-weight:700;">Стегна</div>
+        <div style="color:#555;font-size:10px;margin-top:2px;">рівний силует</div>
+      </div>
+      <div style="background:#111;border:1px solid #2A2A2A;border-radius:14px;padding:14px;text-align:center;grid-column:span 2;">
+        <div style="color:#D4A843;font-size:20px;margin-bottom:4px;">—</div>
+        <div style="color:#D4A843;font-size:12px;font-weight:700;">Лямки прозорі</div>
+        <div style="color:#555;font-size:10px;margin-top:2px;">знімні, не видно під одягом</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section style="border-bottom:1px solid #2A2A2A;padding:20px 16px;">
+  <div style="max-width:56rem;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:28px;text-align:center;">
+    <div><div style="color:#D4A843;font-weight:700;font-size:20px;">2 147</div><div style="color:#555;font-size:11px;">задоволених клієнток</div></div>
+    <div style="width:1px;background:#2A2A2A;"></div>
+    <div><div style="color:#D4A843;font-weight:700;font-size:20px;">⭐ 4.9</div><div style="color:#555;font-size:11px;">середня оцінка</div></div>
+    <div style="width:1px;background:#2A2A2A;"></div>
+    <div><div style="color:#D4A843;font-weight:700;font-size:20px;">L–5XL</div><div style="color:#555;font-size:11px;">великі розміри</div></div>
+    <div style="width:1px;background:#2A2A2A;"></div>
+    <div><div style="color:#D4A843;font-weight:700;font-size:20px;">14 днів</div><div style="color:#555;font-size:11px;">повернення</div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     PAIN / SOLUTION GRID
+═══════════════════════════════════════════════════════ -->
+<section style="padding:56px 16px;">
+  <div style="max-width:56rem;margin:0 auto;">
+
+    <div class="fi" style="text-align:center;margin-bottom:40px;">
+      <div style="color:#D4A843;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;">Ми розуміємо</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;">
+        Болі — і як боді <span style="color:#D4A843;">їх вирішує</span>
+      </h2>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px;">
+
+      <!-- Header row -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;" class="fi">
+        <div style="background:#1a1a1a;border-radius:10px;padding:10px 14px;text-align:center;">
+          <span style="color:#e55;font-size:11px;font-weight:700;letter-spacing:2px;">✗ ПРОБЛЕМА</span>
+        </div>
+        <div style="background:linear-gradient(135deg,#1a1200,#231800);border:1px solid #D4A843;border-radius:10px;padding:10px 14px;text-align:center;">
+          <span style="color:#D4A843;font-size:11px;font-weight:700;letter-spacing:2px;">✓ РІШЕННЯ</span>
+        </div>
+      </div>
+
+      <!-- Row 1: Fit -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;" class="fi">
+        <div class="pain-card" style="border-radius:14px;padding:16px 18px;">
+          <div style="font-weight:700;font-size:14px;margin-bottom:6px;">Одяг не сидить</div>
+          <div style="color:#666;font-size:13px;line-height:1.5;">Сукня пнеться на животі й боках. Нічого не вдається приховати.</div>
+        </div>
+        <div class="sol-card" style="border-radius:14px;padding:16px 18px;">
+          <div style="font-weight:700;font-size:14px;margin-bottom:6px;color:#fff;">Ідеальний силует</div>
+          <div style="color:#999;font-size:13px;line-height:1.5;">Корсетні кісточки утягують талію на 8–12 см миттєво.</div>
+        </div>
+      </div>
+
+      <div class="gold-divider fi"></div>
+
+      <!-- Row 2: Pushup -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;" class="fi">
+        <div class="pain-card" style="border-radius:14px;padding:16px 18px;">
+          <div style="font-weight:700;font-size:14px;margin-bottom:6px;">Груди без підтримки</div>
+          <div style="color:#666;font-size:13px;line-height:1.5;">Окремий бюстгальтер незручний або видно під одягом.</div>
+        </div>
+        <div class="sol-card" style="border-radius:14px;padding:16px 18px;">
+          <div style="font-weight:700;font-size:14px;margin-bottom:6px;color:#fff;">Пушап вбудований</div>
+          <div style="color:#999;font-size:13px;line-height:1.5;">Формовані чашки з кісточкою. +5 см об'єму без бюстгальтера.</div>
+        </div>
+      </div>
+
+      <div class="gold-divider fi"></div>
+
+      <!-- Row 3: Straps -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;" class="fi">
+        <div class="pain-card" style="border-radius:14px;padding:16px 18px;">
+          <div style="font-weight:700;font-size:14px;margin-bottom:6px;">Лямки видно</div>
+          <div style="color:#666;font-size:13px;line-height:1.5;">Не можна надягнути під відкрите декольте чи вечірню сукню.</div>
+        </div>
+        <div class="sol-card" style="border-radius:14px;padding:16px 18px;">
+          <div style="font-weight:700;font-size:14px;margin-bottom:6px;color:#fff;">Прозорі та знімні</div>
+          <div style="color:#999;font-size:13px;line-height:1.5;">Прозорі бретелі не видно. Можна зняти — носити без бретелів.</div>
+        </div>
+      </div>
+
+      <div class="gold-divider fi"></div>
+
+      <!-- Row 4: Plus size -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;" class="fi">
+        <div class="pain-card" style="border-radius:14px;padding:16px 18px;">
+          <div style="font-weight:700;font-size:14px;margin-bottom:6px;">Немає розміру</div>
+          <div style="color:#666;font-size:13px;line-height:1.5;">Звичайна коригуюча білизна або не підходить за розміром, або не корегує.</div>
+        </div>
+        <div class="sol-card" style="border-radius:14px;padding:16px 18px;">
+          <div style="font-weight:700;font-size:14px;margin-bottom:6px;color:#fff;">L до 5XL</div>
+          <div style="color:#999;font-size:13px;line-height:1.5;">Спеціально для пишних форм. Тягнеться і корегує без дискомфорту.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BACK VIEW SECTION -->
+<section style="background:#1A1A1A;border-top:1px solid #2A2A2A;border-bottom:1px solid #2A2A2A;padding:56px 16px;">
+  <div style="max-width:64rem;margin:0 auto;">
+    <div style="display:grid;gap:32px;align-items:center;" id="backViewGrid">
+      <div class="fi" style="border-radius:20px;overflow:hidden;aspect-ratio:3/4;max-width:360px;margin:0 auto;width:100%;">
+        <img src="images/ps_bback.jpg" alt="Відкрита спина боді" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="fi">
+        <div style="color:#D4A843;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;">Деталь</div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:700;margin-bottom:16px;">
+          Відкрита спина — <span style="color:#D4A843;">можна під будь-яку сукню</span>
+        </h2>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="color:#D4A843;font-size:18px;margin-top:2px;flex-shrink:0;">✦</div>
+            <div>
+              <div style="font-weight:600;font-size:14px;margin-bottom:3px;">Відкрита спина до попереку</div>
+              <div style="color:#666;font-size:13px;line-height:1.5;">Ідеально під сукні з вирізом, відкриті моделі, святковий одяг.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="color:#D4A843;font-size:18px;margin-top:2px;flex-shrink:0;">✦</div>
+            <div>
+              <div style="font-weight:600;font-size:14px;margin-bottom:3px;">Мереживний низ (чорна модель)</div>
+              <div style="color:#666;font-size:13px;line-height:1.5;">Витончений мереживний пояс. Сексуальний та практичний одночасно.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="color:#D4A843;font-size:18px;margin-top:2px;flex-shrink:0;">✦</div>
+            <div>
+              <div style="font-weight:600;font-size:14px;margin-bottom:3px;">Еластичний низ без слідів</div>
+              <div style="color:#666;font-size:13px;line-height:1.5;">Не ріже, не залишає слідів під одягом. Сидить на місці весь день.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section style="padding:56px 16px;">
+  <div style="max-width:64rem;margin:0 auto;">
+    <div class="fi" style="text-align:center;margin-bottom:28px;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;">Галерея</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div class="fi" style="border-radius:16px;overflow:hidden;aspect-ratio:3/4;">
+        <img src="images/ps_w2.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Боді plus size білий">
+      </div>
+      <div class="fi" style="border-radius:16px;overflow:hidden;aspect-ratio:3/4;">
+        <img src="images/ps_bclose.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Пушап чорний боді">
+      </div>
+      <div class="fi" style="border-radius:16px;overflow:hidden;aspect-ratio:3/4;">
+        <img src="images/ps_w4.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Боді впевненість">
+      </div>
+      <div class="fi" style="border-radius:16px;overflow:hidden;aspect-ratio:3/4;">
+        <img src="images/ps_b1.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Чорний боді plus size">
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:10px;">
+      <div class="fi" style="border-radius:16px;overflow:hidden;aspect-ratio:3/4;">
+        <img src="images/ps_w5.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Боді white">
+      </div>
+      <div class="fi" style="border-radius:16px;overflow:hidden;aspect-ratio:3/4;">
+        <img src="images/ps_wback.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Спина white боді">
+      </div>
+      <div class="fi" style="border-radius:16px;overflow:hidden;aspect-ratio:3/4;">
+        <img src="images/ps_b2.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Чорний деталь">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIZE TABLE -->
+<section style="background:#1A1A1A;border-top:1px solid #2A2A2A;border-bottom:1px solid #2A2A2A;padding:56px 16px;">
+  <div style="max-width:40rem;margin:0 auto;">
+    <div class="fi" style="text-align:center;margin-bottom:28px;">
+      <div style="color:#D4A843;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;">Знайдіть свій</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;">Таблиця <span style="color:#D4A843;">розмірів</span></h2>
+    </div>
+    <div class="fi" style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:13px;">
+        <thead>
+          <tr style="border-bottom:1px solid #2A2A2A;">
+            <th style="color:#D4A843;text-align:left;padding:12px 16px;font-weight:700;">Розмір</th>
+            <th style="color:#D4A843;text-align:center;padding:12px 16px;font-weight:700;">Груди, см</th>
+            <th style="color:#D4A843;text-align:center;padding:12px 16px;font-weight:700;">Талія, см</th>
+            <th style="color:#D4A843;text-align:center;padding:12px 16px;font-weight:700;">Стегна, см</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #1a1a1a;"><td style="padding:11px 16px;font-weight:700;">L</td><td style="padding:11px 16px;text-align:center;color:#666;">96–100</td><td style="padding:11px 16px;text-align:center;color:#666;">78–82</td><td style="padding:11px 16px;text-align:center;color:#666;">102–106</td></tr>
+          <tr style="border-bottom:1px solid #1a1a1a;"><td style="padding:11px 16px;font-weight:700;">XL</td><td style="padding:11px 16px;text-align:center;color:#666;">100–104</td><td style="padding:11px 16px;text-align:center;color:#666;">82–86</td><td style="padding:11px 16px;text-align:center;color:#666;">106–110</td></tr>
+          <tr style="border-bottom:1px solid #1a1a1a;background:rgba(212,168,67,.05);"><td style="padding:11px 16px;font-weight:700;color:#D4A843;">2XL ★</td><td style="padding:11px 16px;text-align:center;color:#666;">104–108</td><td style="padding:11px 16px;text-align:center;color:#666;">86–90</td><td style="padding:11px 16px;text-align:center;color:#666;">110–116</td></tr>
+          <tr style="border-bottom:1px solid #1a1a1a;"><td style="padding:11px 16px;font-weight:700;">3XL</td><td style="padding:11px 16px;text-align:center;color:#666;">108–114</td><td style="padding:11px 16px;text-align:center;color:#666;">90–96</td><td style="padding:11px 16px;text-align:center;color:#666;">116–122</td></tr>
+          <tr style="border-bottom:1px solid #1a1a1a;"><td style="padding:11px 16px;font-weight:700;">4XL</td><td style="padding:11px 16px;text-align:center;color:#666;">114–120</td><td style="padding:11px 16px;text-align:center;color:#666;">96–102</td><td style="padding:11px 16px;text-align:center;color:#666;">122–128</td></tr>
+          <tr><td style="padding:11px 16px;font-weight:700;">5XL</td><td style="padding:11px 16px;text-align:center;color:#666;">120–126</td><td style="padding:11px 16px;text-align:center;color:#666;">102–108</td><td style="padding:11px 16px;text-align:center;color:#666;">128–134</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fi" style="color:#555;font-size:12px;text-align:center;margin-top:12px;">★ Найпопулярніший · Якщо між розмірами — беріть більший</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section style="padding:56px 16px;">
+  <div style="max-width:64rem;margin:0 auto;">
+    <div class="fi" style="text-align:center;margin-bottom:36px;">
+      <div style="color:#D4A843;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;">Реальні відгуки</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;">Що кажуть <span style="color:#D4A843;">наші клієнтки</span></h2>
+    </div>
+    <div style="display:grid;gap:14px;" id="reviewsGrid">
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:16px;padding:20px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <div style="width:38px;height:38px;border-radius:50%;background:rgba(212,168,67,.15);border:1px solid rgba(212,168,67,.3);display:flex;align-items:center;justify-content:center;color:#D4A843;font-weight:700;font-size:14px;flex-shrink:0;">О</div>
+          <div><div style="font-weight:700;font-size:14px;">Оксана, 38</div><div style="color:#D4A843;font-size:12px;">⭐⭐⭐⭐⭐</div></div>
+        </div>
+        <p style="color:#666;font-size:13px;line-height:1.6;">"Брала 3XL, сиджу між двома. Боді просто чудо — все тримає, нічого не впирається. Сукня нарешті сидить як треба!"</p>
+      </div>
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:16px;padding:20px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <div style="width:38px;height:38px;border-radius:50%;background:rgba(212,168,67,.15);border:1px solid rgba(212,168,67,.3);display:flex;align-items:center;justify-content:center;color:#D4A843;font-weight:700;font-size:14px;flex-shrink:0;">Н</div>
+          <div><div style="font-weight:700;font-size:14px;">Наталія, 44</div><div style="color:#D4A843;font-size:12px;">⭐⭐⭐⭐⭐</div></div>
+        </div>
+        <p style="color:#666;font-size:13px;line-height:1.6;">"Нарешті знайшла боді для великих розмірів що реально корегує! Талія виглядає значно тонше. Дочка не впізнала мене спочатку 😂"</p>
+      </div>
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:16px;padding:20px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <div style="width:38px;height:38px;border-radius:50%;background:rgba(212,168,67,.15);border:1px solid rgba(212,168,67,.3);display:flex;align-items:center;justify-content:center;color:#D4A843;font-weight:700;font-size:14px;flex-shrink:0;">М</div>
+          <div><div style="font-weight:700;font-size:14px;">Марина, 31</div><div style="color:#D4A843;font-size:12px;">⭐⭐⭐⭐⭐</div></div>
+        </div>
+        <p style="color:#666;font-size:13px;line-height:1.6;">"Пушап реально є! Без бюстгальтера вперше за роки. Чорний колір — ідеальний під все. Вже замовила ще один — білий."</p>
+      </div>
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:16px;padding:20px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <div style="width:38px;height:38px;border-radius:50%;background:rgba(212,168,67,.15);border:1px solid rgba(212,168,67,.3);display:flex;align-items:center;justify-content:center;color:#D4A843;font-weight:700;font-size:14px;flex-shrink:0;">В</div>
+          <div><div style="font-weight:700;font-size:14px;">Валерія, 27</div><div style="color:#D4A843;font-size:12px;">⭐⭐⭐⭐⭐</div></div>
+        </div>
+        <p style="color:#666;font-size:13px;line-height:1.6;">"Розмір 2XL підійшов ідеально. Прозорі бретелі дійсно прозорі, не видно під сукнею. Ношу щодня вже місяць."</p>
+      </div>
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:16px;padding:20px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <div style="width:38px;height:38px;border-radius:50%;background:rgba(212,168,67,.15);border:1px solid rgba(212,168,67,.3);display:flex;align-items:center;justify-content:center;color:#D4A843;font-weight:700;font-size:14px;flex-shrink:0;">А</div>
+          <div><div style="font-weight:700;font-size:14px;">Аліна, 35</div><div style="color:#D4A843;font-size:12px;">⭐⭐⭐⭐⭐</div></div>
+        </div>
+        <p style="color:#666;font-size:13px;line-height:1.6;">"Боялась, думала буде тиснути. Нічого подібного! Комфортне, тягнеться добре. Фігура виглядає на 10 кг менше."</p>
+      </div>
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:16px;padding:20px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <div style="width:38px;height:38px;border-radius:50%;background:rgba(212,168,67,.15);border:1px solid rgba(212,168,67,.3);display:flex;align-items:center;justify-content:center;color:#D4A843;font-weight:700;font-size:14px;flex-shrink:0;">І</div>
+          <div><div style="font-weight:700;font-size:14px;">Ірина, 52</div><div style="color:#D4A843;font-size:12px;">⭐⭐⭐⭐⭐</div></div>
+        </div>
+        <p style="color:#666;font-size:13px;line-height:1.6;">"У мені 4XL — раніше не могла знайти нічого нормального. Це боді тримає все що треба. На весіллі доньки виглядала шикарно!"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPSELL -->
+<section style="background:#1A1A1A;border-top:1px solid #2A2A2A;border-bottom:1px solid #2A2A2A;padding:56px 16px;">
+  <div style="max-width:40rem;margin:0 auto;" class="fi">
+    <div style="background:linear-gradient(135deg,#1a1200,#231800);border:1px solid rgba(212,168,67,.4);border-radius:20px;overflow:hidden;">
+      <div style="display:grid;gap:0;" id="upsellGrid">
+        <div style="aspect-ratio:16/9;overflow:hidden;">
+          <img src="images/panties1.jpg" alt="Трусики-коректор сет" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div style="padding:24px;">
+          <div style="color:#D4A843;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;">Доповнення до замовлення</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:6px;">
+            Трусики-коректор <span style="color:#D4A843;">−38%</span>
+          </h3>
+          <p style="color:#666;font-size:13px;line-height:1.5;margin-bottom:16px;">Бежевий + чорний сет. Корегує живіт і стегна. Разом із боді — повна корекція фігури.</p>
+          <div style="background:#0D0D0D;border:1px solid #2A2A2A;border-radius:14px;padding:16px;">
+            <label style="display:flex;align-items:center;justify-content:space-between;cursor:pointer;">
+              <div style="display:flex;align-items:center;gap:12px;">
+                <input type="checkbox" id="upsellCheck" onchange="updateTotal()" style="width:20px;height:20px;accent-color:#D4A843;cursor:pointer;">
+                <div>
+                  <div style="font-weight:700;font-size:14px;">Додати трусики-коректор (сет)</div>
+                  <div style="color:#555;font-size:12px;text-decoration:line-through;">689 ₴</div>
+                </div>
+              </div>
+              <div style="color:#D4A843;font-weight:700;font-size:18px;white-space:nowrap;">+ 429 ₴</div>
+            </label>
+          </div>
+          <div style="text-align:center;margin-top:14px;">
+            <span style="color:#666;font-size:14px;">Разом: <span id="totalPrice" style="color:#D4A843;font-weight:700;font-size:20px;">1 089 ₴</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding:56px 16px;">
+  <div style="max-width:40rem;margin:0 auto;">
+    <div class="fi" style="text-align:center;margin-bottom:32px;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;">Часті <span style="color:#D4A843;">запитання</span></h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;background:none;border:none;color:#fff;cursor:pointer;">
+          <span style="font-weight:700;font-size:14px;">Чи є розмір для пишних форм?</span>
+          <span style="color:#D4A843;font-size:22px;line-height:1;flex-shrink:0;">+</span>
+        </button>
+        <div class="faq-answer" style="padding:0 20px;">
+          <p style="color:#666;font-size:13px;line-height:1.6;padding-bottom:16px;">Так! Маємо розміри від L до 5XL. Якщо між розмірами — беріть більший, тканина добре тягнеться і не стискає.</p>
+        </div>
+      </div>
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;background:none;border:none;color:#fff;cursor:pointer;">
+          <span style="font-weight:700;font-size:14px;">Чи реально буде помітна різниця?</span>
+          <span style="color:#D4A843;font-size:22px;line-height:1;flex-shrink:0;">+</span>
+        </button>
+        <div class="faq-answer" style="padding:0 20px;">
+          <p style="color:#666;font-size:13px;line-height:1.6;padding-bottom:16px;">Так. Корсетні кісточки утягують талію на 8–12 см миттєво. Ефект видно вже коли надягаєте — не треба чекати тижнями.</p>
+        </div>
+      </div>
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;background:none;border:none;color:#fff;cursor:pointer;">
+          <span style="font-weight:700;font-size:14px;">Чи комфортно носити весь день?</span>
+          <span style="color:#D4A843;font-size:22px;line-height:1;flex-shrink:0;">+</span>
+        </button>
+        <div class="faq-answer" style="padding:0 20px;">
+          <p style="color:#666;font-size:13px;line-height:1.6;padding-bottom:16px;">Клієнтки носять від 6 до 12 годин. Тканина дихає, еластична. Якщо вперше в корекційній білизні — почніть з 4–5 годин.</p>
+        </div>
+      </div>
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;background:none;border:none;color:#fff;cursor:pointer;">
+          <span style="font-weight:700;font-size:14px;">Як оплатити і отримати?</span>
+          <span style="color:#D4A843;font-size:22px;line-height:1;flex-shrink:0;">+</span>
+        </button>
+        <div class="faq-answer" style="padding:0 20px;">
+          <p style="color:#666;font-size:13px;line-height:1.6;padding-bottom:16px;">Доставка Нова Пошта по всій Україні. Оплата при отриманні (накладений платіж) або онлайн карткою.</p>
+        </div>
+      </div>
+      <div class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:14px;overflow:hidden;">
+        <button onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;background:none;border:none;color:#fff;cursor:pointer;">
+          <span style="font-weight:700;font-size:14px;">Що якщо розмір не підійде?</span>
+          <span style="color:#D4A843;font-size:22px;line-height:1;flex-shrink:0;">+</span>
+        </button>
+        <div class="faq-answer" style="padding:0 20px;">
+          <p style="color:#666;font-size:13px;line-height:1.6;padding-bottom:16px;">Повернення протягом 14 днів згідно ЗУ "Про захист прав споживачів". Зв'яжіться з нами — вирішимо без зайвих питань.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER FORM -->
+<section id="form" style="background:#1A1A1A;border-top:1px solid #2A2A2A;padding:56px 16px;">
+  <div style="max-width:32rem;margin:0 auto;">
+    <div class="fi" style="text-align:center;margin-bottom:28px;">
+      <div style="color:#D4A843;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;">Оформити замовлення</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:700;">Залишіть заявку — <span style="color:#D4A843;">передзвонимо</span></h2>
+      <p style="color:#555;font-size:13px;margin-top:8px;">Підтвердимо наявність та оформимо доставку за 5 хвилин</p>
+    </div>
+
+    <div id="formWrap" class="fi" style="background:#111;border:1px solid #2A2A2A;border-radius:20px;padding:24px;">
+      <form onsubmit="submitOrder(event)" style="display:flex;flex-direction:column;gap:16px;">
+        <div>
+          <label style="font-size:11px;color:#555;text-transform:uppercase;letter-spacing:2px;display:block;margin-bottom:6px;">Ваше ім'я</label>
+          <input id="fName" type="text" placeholder="Ольга" required
+            style="width:100%;background:#0D0D0D;border:1px solid #2A2A2A;border-radius:12px;padding:12px 16px;color:#fff;font-size:14px;transition:border-color .2s;">
+        </div>
+        <div>
+          <label style="font-size:11px;color:#555;text-transform:uppercase;letter-spacing:2px;display:block;margin-bottom:6px;">Телефон</label>
+          <input id="fPhone" type="tel" placeholder="+380__________" required
+            style="width:100%;background:#0D0D0D;border:1px solid #2A2A2A;border-radius:12px;padding:12px 16px;color:#fff;font-size:14px;transition:border-color .2s;">
+        </div>
+        <div>
+          <label style="font-size:11px;color:#555;text-transform:uppercase;letter-spacing:2px;display:block;margin-bottom:8px;">Розмір</label>
+          <div id="formSizes" style="display:flex;flex-wrap:wrap;gap:8px;">
+            <button type="button" class="size-btn" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectFormSize(this,'L')">L</button>
+            <button type="button" class="size-btn" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectFormSize(this,'XL')">XL</button>
+            <button type="button" class="size-btn active" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectFormSize(this,'2XL')">2XL</button>
+            <button type="button" class="size-btn" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectFormSize(this,'3XL')">3XL</button>
+            <button type="button" class="size-btn" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectFormSize(this,'4XL')">4XL</button>
+            <button type="button" class="size-btn" style="border-radius:10px;padding:8px 14px;font-size:13px;" onclick="selectFormSize(this,'5XL')">5XL</button>
+          </div>
+          <input type="hidden" id="fSize" value="2XL">
+        </div>
+        <div style="background:#0D0D0D;border:1px solid #2A2A2A;border-radius:12px;padding:14px;">
+          <label style="display:flex;align-items:center;gap:12px;cursor:pointer;">
+            <input type="checkbox" id="fUpsell" onchange="updateFormTotal()" style="width:20px;height:20px;accent-color:#D4A843;cursor:pointer;">
+            <div>
+              <div style="font-weight:700;font-size:14px;">+ Трусики-коректор сет (беж + чорний)</div>
+              <div style="color:#555;font-size:12px;">429 ₴ замість 689 ₴</div>
+            </div>
+          </label>
+        </div>
+        <div style="background:linear-gradient(135deg,#1a1200,#231800);border:1px solid rgba(212,168,67,.3);border-radius:12px;padding:14px;text-align:center;">
+          <span style="color:#666;font-size:14px;">Сума: <span id="formTotal" style="color:#D4A843;font-weight:700;font-size:20px;">1 089 ₴</span></span>
+        </div>
+        <input type="hidden" id="fUpsellHidden" value="ні">
+        <button type="submit"
+          style="background:linear-gradient(90deg,#D4A843,#C4916A);color:#0D0D0D;font-weight:700;font-size:16px;padding:16px;border-radius:14px;border:none;cursor:pointer;transition:opacity .2s;"
+          onmouseover="this.style.opacity='.88'" onmouseout="this.style.opacity='1'">
+          Замовити зараз →
+        </button>
+        <p style="color:#444;font-size:11px;text-align:center;">Натискаючи кнопку, ви погоджуєтесь з <a href="/oferta" style="color:#D4A843;text-decoration:none;">офертою</a></p>
+      </form>
+    </div>
+
+    <div id="successWrap" style="display:none;background:#111;border:1px solid rgba(212,168,67,.3);border-radius:20px;padding:48px 24px;text-align:center;" class="fi">
+      <div style="font-size:52px;margin-bottom:16px;">✅</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#D4A843;margin-bottom:10px;">Замовлення прийнято!</h3>
+      <p style="color:#555;font-size:13px;line-height:1.6;">Ми зателефонуємо вам протягом 30 хвилин для підтвердження та оформлення доставки.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid #2A2A2A;padding:32px 16px;">
+  <div style="max-width:64rem;margin:0 auto;">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:24px;">
+      <div>
+        <div style="font-family:'Playfair Display',serif;color:#D4A843;font-size:18px;margin-bottom:4px;">FORMUUCHE Plus Size</div>
+        <div style="color:#444;font-size:12px;">ФОП [Ваше ім'я]</div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;font-size:13px;">
+        <a href="/oferta" style="color:#555;text-decoration:none;" onmouseover="this.style.color='#D4A843'" onmouseout="this.style.color='#555'">Публічна оферта</a>
+        <a href="#" style="color:#555;text-decoration:none;" onmouseover="this.style.color='#D4A843'" onmouseout="this.style.color='#555'">Повернення</a>
+        <a href="#" style="color:#555;text-decoration:none;" onmouseover="this.style.color='#D4A843'" onmouseout="this.style.color='#555'">Контакти</a>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;font-size:12px;color:#444;">
+      <span>📦 Нова Пошта по Україні</span>
+      <span>💳 Оплата при отриманні</span>
+      <span>↩ 14 днів повернення згідно ЗУ</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:50;background:rgba(13,13,13,.96);backdrop-filter:blur(8px);border-top:1px solid #2A2A2A;padding:12px 16px;align-items:center;justify-content:space-between;gap:12px;">
+  <div>
+    <div style="color:#D4A843;font-weight:700;font-size:18px;">1 089 ₴</div>
+    <div style="color:#444;font-size:11px;text-decoration:line-through;">1 689 ₴</div>
+  </div>
+  <button onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})"
+    style="flex:1;background:linear-gradient(90deg,#D4A843,#C4916A);color:#0D0D0D;font-weight:700;font-size:14px;padding:13px;border-radius:12px;border:none;cursor:pointer;">
+    Замовити зараз →
+  </button>
+</div>
+
+<script>
+// ── Responsive grids ─────────────────────────────────
+(function() {
+  function applyGrids() {
+    const w = window.innerWidth;
+    const heroGrid = document.getElementById('heroGrid');
+    const backGrid = document.getElementById('backViewGrid');
+    const reviewsGrid = document.getElementById('reviewsGrid');
+    if (w >= 768) {
+      if (heroGrid) heroGrid.style.gridTemplateColumns = '1fr 1fr';
+      if (backGrid) backGrid.style.gridTemplateColumns = '1fr 1fr';
+      if (reviewsGrid) reviewsGrid.style.gridTemplateColumns = '1fr 1fr 1fr';
+      const navCta = document.getElementById('navCta');
+      if (navCta) navCta.style.display = 'block';
+    } else {
+      if (heroGrid) heroGrid.style.gridTemplateColumns = '1fr';
+      if (backGrid) backGrid.style.gridTemplateColumns = '1fr';
+      if (reviewsGrid) reviewsGrid.style.gridTemplateColumns = '1fr 1fr';
+    }
+  }
+  applyGrids();
+  window.addEventListener('resize', applyGrids);
+})();
+
+// ── Timer ────────────────────────────────────────────
+(function() {
+  const KEY = 'bodi_plus_end_v1';
+  let end = +localStorage.getItem(KEY);
+  if (!end || end < Date.now()) {
+    end = Date.now() + 24 * 3600 * 1000;
+    localStorage.setItem(KEY, end);
+  }
+  function tick() {
+    const d = end - Date.now();
+    if (d <= 0) return;
+    const h = Math.floor(d / 3600000);
+    const m = Math.floor((d % 3600000) / 60000);
+    const s = Math.floor((d % 60000) / 1000);
+    document.getElementById('tH').textContent = String(h).padStart(2,'0');
+    document.getElementById('tM').textContent = String(m).padStart(2,'0');
+    document.getElementById('tS').textContent = String(s).padStart(2,'0');
+  }
+  tick(); setInterval(tick, 1000);
+})();
+
+// ── Color Switcher ───────────────────────────────────
+const heroImgs = { w:'images/ps_w1.jpg', b:'images/ps_b1.jpg', wb:'images/ps_wback.jpg', bb:'images/ps_bback.jpg' };
+function switchColor(c, e) {
+  const img = document.getElementById('heroImg');
+  img.style.opacity = '0';
+  setTimeout(function() { img.src = heroImgs[c]; img.style.opacity = '1'; }, 220);
+  document.querySelectorAll('.thumb').forEach(function(t){ t.classList.remove('active'); });
+  e.currentTarget.classList.add('active');
+}
+
+// ── Size Selectors ───────────────────────────────────
+function selectSize(btn) {
+  document.querySelectorAll('#heroSizes button').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+}
+function selectFormSize(btn, size) {
+  document.querySelectorAll('#formSizes button').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.getElementById('fSize').value = size;
+}
+
+// ── Upsell totals ────────────────────────────────────
+function updateTotal() {
+  const has = document.getElementById('upsellCheck').checked;
+  document.getElementById('totalPrice').textContent = has ? '1 518 ₴' : '1 089 ₴';
+}
+function updateFormTotal() {
+  const has = document.getElementById('fUpsell').checked;
+  document.getElementById('formTotal').textContent = has ? '1 518 ₴' : '1 089 ₴';
+  document.getElementById('fUpsellHidden').value = has ? 'так' : 'ні';
+}
+
+// ── FAQ ──────────────────────────────────────────────
+function toggleFaq(btn) {
+  const ans = btn.nextElementSibling;
+  const icon = btn.querySelector('span:last-child');
+  const isOpen = ans.classList.contains('open');
+  document.querySelectorAll('.faq-answer').forEach(function(a){
+    a.classList.remove('open');
+    a.previousElementSibling.querySelector('span:last-child').textContent = '+';
+  });
+  if (!isOpen) { ans.classList.add('open'); icon.textContent = '×'; }
+}
+
+// ── Form Submit ──────────────────────────────────────
+async function submitOrder(e) {
+  e.preventDefault();
+  const data = {
+    name: document.getElementById('fName').value,
+    phone: document.getElementById('fPhone').value,
+    size: document.getElementById('fSize').value,
+    upsell: document.getElementById('fUpsellHidden').value,
+    product: 'Боді Plus Size',
+    total: document.getElementById('fUpsell').checked ? '1518' : '1089'
+  };
+  try {
+    await fetch('https://YOUR_WORKER.workers.dev/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+  } catch(err) {}
+  document.getElementById('formWrap').style.display = 'none';
+  const sw = document.getElementById('successWrap');
+  sw.style.display = 'block';
+  sw.classList.add('visible');
+}
+
+// ── Fade-in observer ─────────────────────────────────
+const obs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fi').forEach(function(el){ obs.observe(el); });
+
+// ── Sticky CTA ───────────────────────────────────────
+(function() {
+  const cta = document.querySelector('.sticky-cta');
+  if (!cta || window.innerWidth > 768) return;
+  cta.style.display = 'flex';
+  const formObs = new IntersectionObserver(function(entries) {
+    cta.style.display = entries[0].isIntersecting ? 'none' : 'flex';
+  }, { threshold: 0.3 });
+  formObs.observe(document.getElementById('form'));
+})();
+</script>
+</body>
+</html>
